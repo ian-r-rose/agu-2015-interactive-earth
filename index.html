@@ -14,11 +14,11 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		<link rel="stylesheet" href="reveal.css">
+		<link rel="stylesheet" href="night.css" id="theme">
 
 		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="zenburn.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -43,7 +43,7 @@
 				<section data-markdown>
 					<script type="text/template">
                       ## Interactive investigations into planetary interiors  
-                      ![thermal_hires](images/thermal_hires.png)
+                      ![thermal_hires](thermal_hires.png)
                       Ian Rose
 
                       University of California, Berkeley
@@ -52,13 +52,13 @@
 				<section data-markdown>
 					<script type="text/template">
                       ### AGU 2013
-                      ![agu_2013](images/agu_2013.png)
+                      ![agu_2013](agu_2013.png)
 					</script>
 				</section>
 				<section data-markdown>
 					<script type="text/template">
                     ### Mantle convection and plate tectonics education
-                    ![cartoon](images/mantle_convection_cartoon_small.png)
+                    ![cartoon](mantle_convection_cartoon_small.png)
 
                     Cartoons (en.wikipedia.org)
 					</script>
@@ -66,7 +66,7 @@
 				<section data-markdown>
 					<script type="text/template">
                     ### Mantle convection and plate tectonics education
-                    ![model](images/convection_model.png)
+                    ![model](convection_model.png)
 
                     Model screenshots (en.wikipedia.org)
 					</script>
@@ -74,7 +74,7 @@
                 <section>
                   <h3> Mantle convection and plate tectonics education </h3>
                   <video data-autoplay>
-                    <source data-src="videos/convection_small.mp4" type="video/mp4" />
+                    <source data-src="convection_small.mp4" type="video/mp4" />
                   </video>
                   <p>Credit: Wolfgang Bangerth </p>
                 </section>
@@ -96,21 +96,21 @@
                     * Uses SDL2 for event handling
                     * On the web: compiles to Javascript via emscripten
 
-                    ![SDL](images/sdl_logo_small.png)
-                    ![emscripten](images/emscripten_logo_small.png)
-                    ![OpenGL](images/opengl_logo_small.png)
+                    ![SDL](sdl_logo_small.png)
+                    ![emscripten](emscripten_logo_small.png)
+                    ![OpenGL](opengl_logo_small.png)
 					</script>
 				</section>
                 <section>
 				  <section data-markdown>
 				  	<script type="text/template">
-                      [Demonstration?](interactive_earth/thermal_hires.html)
+                      [Demonstration?](thermal_hires.html)
 				  	</script>
                   </section>
                   <section>
                     <p>Backup demonstration</p>
                       <video data-autoplay>
-                        <source data-src="videos/demonstration.mp4" type="video/mp4" />
+                        <source data-src="demonstration.mp4" type="video/mp4" />
                       </video>
                   </section>
                 </section>
@@ -125,7 +125,7 @@
 				<section data-markdown>
 					<script type="text/template">
                     ## Example lesson plan
-                    ![RaNu](images/RaNu.svg)
+                    ![RaNu](RaNu.svg)
 
                     Rayleigh number-Nusselt number scaling
 					</script>
@@ -150,7 +150,7 @@
 					<script type="text/template">
                     ## Thanks!
                     Questions?
-                    ![thermochemical_hires](images/thermochemical_hires.png)
+                    ![thermochemical_hires](thermochemical_hires.png)
                     Link : [ian-r-rose.github.io/interactive_earth](http://ian-r-rose.github.io/interactive_earth)
 
                     Email : ian.r.rose@gmail.com
@@ -162,8 +162,8 @@
 
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<script src="head.min.js"></script>
+		<script src="reveal.js"></script>
 
 		<script>
 
@@ -179,12 +179,12 @@
 
 				// Optional reveal.js plugins
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'zoom.js', async: true },
+					{ src: 'notes.js', async: true }
 				]
 			});
 
